@@ -1,13 +1,285 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carniceria</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\html\style2.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Beef</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Reservaciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/car.svg" id="img-carrito" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-content container">
+            <h1>Carniceria Duoc UC</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum aspernatur sunt suscipit
+                beatae officiis impedit consectetur, quis, vel, et sapiente! Blanditiis, ipsam debitis dolores nulla
+                excepturi nobis autem! Minima!
+            </p>
+            <div class="botons">
+                <a href="#" class="btn-1">Mas Informacion</a>
+                <a href="#" class="btn-1">Menu</a>
+            </div>
+            <div class="socials-1">
+                <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/s1.svg" alt="">
+                <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/s2.svg" alt="">
+                <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/s3.svg" alt="">
+            </div>
+            <a href="#lista">
+                <img class="arrow" src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/arrow.svg"
+                    alt="">
+            </a>
+        </div>
+    </header>
+
+    <section class="recetas container">
+        <div class="recetas-1">
+            <h3>135 modos de preparar carne</h3>
+            <br>
+            <p>Recetas</p>
+        </div>
+        <div class="recetas-2">
+            <h2>135 <br> recetas <br> de carne </h2>
+        </div>
+    </section>
+    
+    <section class="platillos container" id="lista">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\pl1.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\pl2.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\pl3.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\pl4.png" alt="">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="recetas container">
+        <div class="recetas-2">
+            <h2>100 <br> tipos <br> de carne </h2>
+        </div>
+        <div class="recetas-1">
+            <h3>135 modos de pedir tu corte</h3>
+            <br>
+            <p>Kg</p>
+        </div>
+    </section>
+
+    <section class="platillos container" id="lista-2">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1"> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\c1.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1"> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\c2.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1"> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\c1.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al carrito</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="platillo">
+                        <h3 class="c1"> Corte Americano</h3>
+                        <p class="precio">$200</p>
+                        <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images\c3.png" alt="">
+                        <p class="c2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, deserunt. Enim nam, quae
+                            magni libero, dolorum molestiae aliquid placeat aperiam nesciunt, laudantium consequatur
+                            aut. Ratione provident delectus porro sequi animi.
+                        </p>
+                        <a href="#" class="agregar-carrito btn-3" data-id="8">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="recetas container">
+        <div class="recetas-1">
+            <hr>
+            <p>Contacto</p>
+        </div>
+    </section>
+
+    <footer class="footer container">
+        <div class="links">
+            <div class="link">
+                <h3>Redes</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi voluptatibus reprehenderit esse fuga
+                    est doloremque odio pariatur, adipisci officia ducimus molestias consectetur illum iste officiis
+                    perspiciatis dolorem, cupiditate, obcaecati ex.
+                </p>
+                <div class="socials-2">
+                    <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/s1.svg" alt="">
+                    <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/s2.svg" alt="">
+                    <img src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\images/s3.svg" alt="">
+                </div>
+            </div>  
+
+ <!--       <div class="link">
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+
+            <div class="link"> 
+                <h3>Lorem</h3>
+                 <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                     <li><a href="#">lorem</a></li>
+                     <li><a href="#">lorem</a></li>
+                </ul>
+            </div>-->
+
+            <div class="link">
+                <h3>Formulario</h3>
+                <form>
+                    <input type="text" placeholder="Nombre" class="inp">
+                    <input type="email" placeholder="Email" class="inp">
+                    <textarea class="inp"></textarea>
+                    <input class="btn-4" type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="C:\Users\cabal\Programación Web\Carniceria\ProyectoWeb2023\script.js"></script>
+</body>
+
 </html>
